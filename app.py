@@ -7,25 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return "Hello, World!"
-birthdays = {'Alice': 'Apr 1', 'Bob': 'Dec 12', 'Carol': 'Mar 4'}
-
-
-while True:
-    print('Enter a name: (blank to quit)')
-    name = input()
-    if name == '':
-        break
-
-
-   if name in birthdays:
-        print(birthdays[name] + ' is the birthday of ' + name)
-    else:
-        print('I do not have birthday information for ' + name)
-        print('What is your birthday?')
-        bday = input()
-        birthdays[name] = bday
-        print('Birthday database updated')
-
+print 'thank you for choosing chuoacabra\'s united for your local poetry slam trips.'
 
 if __name__ == '__main__':
     # gets Heroku's suggested port out of the environment dictionary if exists:
