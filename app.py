@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return "Hello, World!"
-print 'thank you for choosing chuoacabra\'s united for your local poetry slam trips.'
+print ('thank you for choosing chuoacabra\'s united for your local poetry slam trips.')
 
 if __name__ == '__main__':
     # gets Heroku's suggested port out of the environment dictionary if exists:
